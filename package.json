@@ -25,7 +25,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/kreatoai/n8n-nodes-kreatoai.git"
+        "url": "git+https://github.com/kreatoai/n8n-nodes-kreatoai.git"
+    },
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
     },
     "bugs": {
         "url": "https://github.com/kreatoai/n8n-nodes-kreatoai/issues"
