@@ -13,7 +13,7 @@ export class KreatoaiApi implements ICredentialType {
 
 	icon: Icon = { light: 'file:../icons/kreatoai.svg', dark: 'file:../icons/kreatoai.dark.svg' };
 
-	documentationUrl = 'https://kreatoai.com/developers/api-keys';
+	documentationUrl = 'https://kreatoai.com/developers/api-keys?ref=n8n-node';
 
 	properties: INodeProperties[] = [
 		{

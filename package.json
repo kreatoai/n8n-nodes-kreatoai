@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-kreatoai",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "n8n node for Kreatoai: publish and schedule posts on Facebook, Instagram, TikTok, LinkedIn, YouTube, Bluesky, Google Business and Pinterest.",
     "license": "MIT",
     "homepage": "https://kreatoai.com/developers/n8n",

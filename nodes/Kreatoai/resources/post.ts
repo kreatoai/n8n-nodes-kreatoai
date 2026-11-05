@@ -158,7 +158,7 @@ const networkOptionsField: INodeProperties = {
 	type: 'json',
 	default: '{}',
 	description:
-		'Advanced settings per network, as described in the API documentation (https://kreatoai.com/developers). For example {"youtube": {"privacyStatus": "unlisted"}}.',
+		'Advanced settings per network, as described in the API documentation (https://kreatoai.com/developers?ref=n8n-node). For example {"youtube": {"privacyStatus": "unlisted"}}.',
 };
 
 export const postDescription: INodeProperties[] = [
