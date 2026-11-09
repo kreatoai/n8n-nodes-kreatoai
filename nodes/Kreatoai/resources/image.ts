@@ -75,17 +75,27 @@ export const imageDescription: INodeProperties[] = [
 		routing: { send: { type: 'body', property: 'prompt' } },
 	},
 	{
-		displayName: 'Aspect Ratio',
-		name: 'aspectRatio',
-		type: 'options',
-		default: '9:16',
+		displayName: 'Additional Fields',
+		name: 'additionalFields',
+		type: 'collection',
+		placeholder: 'Add Field',
+		default: {},
 		displayOptions: { show: show(['create']) },
 		options: [
-			{ name: 'Vertical (9:16)', value: '9:16' },
-			{ name: 'Square (1:1)', value: '1:1' },
-			{ name: 'Horizontal (16:9)', value: '16:9' },
+			{
+				displayName: 'Aspect Ratio',
+				name: 'aspectRatio',
+				type: 'options',
+				default: '9:16',
+				description: 'Shape of the image. Vertical (9:16) when not set.',
+				options: [
+					{ name: 'Vertical (9:16)', value: '9:16' },
+					{ name: 'Square (1:1)', value: '1:1' },
+					{ name: 'Horizontal (16:9)', value: '16:9' },
+				],
+				routing: { send: { type: 'body', property: 'aspectRatio' } },
+			},
 		],
-		routing: { send: { type: 'body', property: 'aspectRatio' } },
 	},
 
 	// Get, Delete
@@ -114,7 +124,7 @@ export const imageDescription: INodeProperties[] = [
 					type: 'generic',
 					properties: {
 						continue: '={{ !!$response.body.nextCursor }}',
-						request: { qs: { cursor: '={{ $response.body.nextCursor }}' } },
+						request: { qs: { cursor: '={{ $response.body.nextCursor }}', limit: '={{ $request.qs.limit }}' } },
 					},
 				},
 			},

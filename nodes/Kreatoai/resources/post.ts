@@ -328,7 +328,7 @@ export const postDescription: INodeProperties[] = [
 					type: 'generic',
 					properties: {
 						continue: '={{ !!$response.body.nextCursor }}',
-						request: { qs: { cursor: '={{ $response.body.nextCursor }}' } },
+						request: { qs: { cursor: '={{ $response.body.nextCursor }}', limit: '={{ $request.qs.limit }}' } },
 					},
 				},
 			},
