@@ -19,8 +19,7 @@ const HINTS: Record<string, string> = {
 	targets_in_several_workspaces:
 		'These accounts are in different Kreatoai workspaces. Create one post per workspace, with only its own accounts.',
 	channel_limit_exceeded: `Your Kreatoai account has more connected accounts than its plan allows, so nothing was published. Disconnect some in ${DASHBOARD}/channels or upgrade in ${DASHBOARD}/billing.`,
-	subscription_required: `The free plan limit is reached, so nothing was done. A free account creates 10 posts per month, and images need a paid plan. Upgrade in ${DASHBOARD}/billing.`,
-	insufficient_credits: 'Not enough credits for this image. Nothing was charged. Credits are refilled when the subscription renews.',
+	subscription_required: `The free plan limit is reached, so nothing was done. A free account creates 10 posts per month. Upgrade in ${DASHBOARD}/billing.`,
 	youtube_daily_limit: 'The YouTube daily limit is reached for that day. Schedule this video on another day.',
 	scheduled_at_in_past: "'Schedule Time' must be in the future.",
 	media_unreadable: "The media can't be read from its URL. Check that the link is public and points to an image or a video.",
@@ -30,7 +29,6 @@ const HINTS: Record<string, string> = {
 	post_not_found: "This post doesn't exist in your workspace. Check the 'Post ID'.",
 	post_not_editable: 'This post has already been published, is being sent, or was cancelled, so it can no longer be changed.',
 	post_not_cancellable: 'This post has already been published or cancelled, so there is nothing to cancel.',
-	generation_not_found: "This image doesn't exist in your workspace, or it was deleted. Check the 'Image ID'.",
 	rate_limit_exceeded: 'Too many requests. Wait a minute, then try again.',
 	rate_limited: 'Too many requests. Wait a minute, then try again.',
 	payload_too_large: 'The request is too large. For a big file, use Media > Upload with a URL instead of a binary file.',

@@ -13,7 +13,7 @@ export const workspaceDescription: INodeProperties[] = [
 				name: 'Get',
 				value: 'get',
 				action: 'Get workspace',
-				description: 'Retrieve your workspace: brand, plan and remaining credits',
+				description: 'Retrieve your workspace: brand and plan',
 				routing: {
 					request: { method: 'GET', url: '/v1/workspace' },
 					output: { postReceive: [handleApiError] },

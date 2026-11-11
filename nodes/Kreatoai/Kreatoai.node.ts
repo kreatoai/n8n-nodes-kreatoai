@@ -1,6 +1,5 @@
 import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
 import { accountDescription } from './resources/account';
-import { imageDescription } from './resources/image';
 import { mediaDescription } from './resources/media';
 import { postDescription } from './resources/post';
 import { workspaceDescription } from './resources/workspace';
@@ -46,7 +45,6 @@ export class Kreatoai implements INodeType {
 				noDataExpression: true,
 				options: [
 					{ name: 'Account', value: 'account' },
-					{ name: 'Image', value: 'image' },
 					{ name: 'Media', value: 'media' },
 					{ name: 'Post', value: 'post' },
 					{ name: 'Workspace', value: 'workspace' },
@@ -54,7 +52,6 @@ export class Kreatoai implements INodeType {
 				default: 'post',
 			},
 			...accountDescription,
-			...imageDescription,
 			...mediaDescription,
 			...postDescription,
 			...workspaceDescription,

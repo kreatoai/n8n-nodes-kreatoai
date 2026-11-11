@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+The Image resource is removed: Kreatoai no longer creates images. Upload your own files with Media > Upload and publish them with Post > Create.
+
 ## 0.1.2
 
 The credential documentation link and the API documentation link carry `?ref=n8n-node`, so Kreatoai knows a sign-up came from the node.

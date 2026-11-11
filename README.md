@@ -25,14 +25,11 @@ n8n checks the key when you save the credential.
 | Post | Create, Get, Get Many, Update, Cancel |
 | Account | Get Many |
 | Media | Upload (from a URL or a binary file) |
-| Image | Create, Get, Get Many, Delete |
 | Workspace | Get |
 
 **Post > Create** publishes right away, or at the time set in **Schedule Time**. Pick one or more connected accounts in **Accounts**. Optional fields: media URLs (up to 10), story format, a first comment on Facebook and Instagram, an idempotency key, and advanced settings per network in **Network Options**.
 
 **Post > Get** returns the status of the post on each network, with the link to the published post.
-
-**Image > Create** makes an image from a sentence (2 credits, about 30 seconds). Use **Image > Get** to read its link once its status is `completed`, then pass that link to **Post > Create**.
 
 The node can also be used as a tool by an n8n AI agent.
 
@@ -46,7 +43,7 @@ A typical workflow:
 
 Each network has its own rules (text length, image or video required). When a post doesn't fit a network, the node returns the reason from the API, for example `video_required_for_target` for YouTube.
 
-On the free plan, you can create 10 posts per month. Images need a paid plan.
+On the free plan, you can create 10 posts per month.
 
 ## Compatibility
 
